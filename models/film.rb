@@ -55,7 +55,7 @@ class Film
     end
 
     def self.map_items(film_data)
-        result = film_data.map { |film| Film.new( film ) }
+        result = film_data.map { |film| Film.new(film) }
         return result
     end
 

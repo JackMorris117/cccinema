@@ -54,7 +54,7 @@ class Customer
     end
 
     def self.map_items(customer_data)
-        result = customer_data.map { |customer| Customer.new( customer ) }
+        result = customer_data.map { |customer| Customer.new(customer) }
         return result
     end
 
