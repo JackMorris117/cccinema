@@ -27,7 +27,7 @@ class Customer
         @id = customer['id'].to_i
     end
 
-    def film()
+    def films()
         sql = "SELECT films.* FROM films
         INNER JOIN tickets ON tickets.film_id = films.id WHERE customer_id = $1"
         values = [@id]
